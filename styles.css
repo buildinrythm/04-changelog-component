@@ -1,0 +1,40 @@
+#changelog-container {
+    border: 2px solid black;
+    border-radius: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.changelog-row{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.line {
+    border-right: 2px solid black;
+    height: 100px;
+    position: relative;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%; 
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+.changelog-date{
+    margin-top: 27px
+}
+
+.changelog-content{
+    margin-top: 27px;
+}
