@@ -2,6 +2,7 @@ h2{
     margin-bottom: 50px;
 }
 body{
+  font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: center;
 }
