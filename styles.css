@@ -26,7 +26,7 @@ h2{
     padding: 2rem 3rem;
 }
 
-/* Giving row fixed width to for horizontal alignment */
+/* Settings for each row */
 .changelog-row{
     display: flex;
     gap: 1rem;
@@ -35,9 +35,10 @@ h2{
     max-width: 800px;
     margin: 0 auto;
     border: 2px solid red;
+    padding-left: 7rem;
 }
 
-/* the left side date fixed for horizontal alignment.*/
+/* the left side date.*/
 .changelog-date{
     width: 150px;
     flex-shrink: 0;
