@@ -15,7 +15,7 @@ h2{
     margin: 1rem;
 }
 
-/* space in the changelog container and center it's items */
+/* The changelog container */
 #changelog-container {
     border: 2px solid black;
     border-radius: 18px;
@@ -44,3 +44,10 @@ h2{
     flex-shrink: 0;
 }
 
+/* Right side text */
+.changelog-content {
+    flex-shrink: 0;
+    width: 40%;
+    min-width: 200px;
+    max-width: 400px;
+}
