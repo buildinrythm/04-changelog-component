@@ -10,9 +10,11 @@ body {
     font-family: 'Inter', sans-serif;
     padding: 1rem 2rem;
 }
-
+h1{
+    padding-bottom: 1rem;
+}
 h2{
-    margin: 1rem;
+    margin-bottom: 4rem  ;
 }
 
 /* The changelog container */
@@ -29,19 +31,20 @@ h2{
 /* Settings for each row */
 .changelog-row{
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     align-items: center;
    width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    border: 2px solid red;
     padding-left: 7rem;
+    height: 100px;
 }
 
 /* the left side date.*/
 .changelog-date{
     width: 150px;
     flex-shrink: 0;
+    color: gray;
 }
 
 /* Right side text */
@@ -56,6 +59,7 @@ h2{
     border-right: 2px solid black;
     height: 3rem;
     position: relative;
+    height: 100%;
 }
 
 .dot {
@@ -66,5 +70,10 @@ h2{
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.timeline{
+height: 100%;
+border: 1px solid red;
 }
 
