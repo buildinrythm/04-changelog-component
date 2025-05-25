@@ -114,3 +114,49 @@ width: 200px;
   --accent-color: #a1ba32c8;
   --border-color: #cccccc;
 }
+
+@media (max-width: 768px) {
+ h1{
+    text-align: center;
+ }
+h2{
+    text-align: center;
+}
+  .changelog-row {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 2rem;
+    height: auto;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .changelog-date,
+  .changelog-content {
+    width: 100%;
+    max-width: none;
+  }
+
+  .timeline {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .line {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-right: none;
+    border-top: 2px solid var(--border-color);
+  }
+
+  .dot {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+}
