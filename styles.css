@@ -1,0 +1,38 @@
+/* No extra space unless I add it */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting font */
+body {
+    font-family: 'Inter', sans-serif;
+    padding: 1rem 2rem;
+}
+
+h2{
+    margin: 1rem;
+}
+
+/* space in the changelog container and center it's items */
+#changelog-container {
+    border: 2px solid black;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.changelog-row{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.changelog-date{
+    width: 150px;
+    flex-shrink: 0;
+}
