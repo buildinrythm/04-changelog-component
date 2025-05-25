@@ -12,6 +12,7 @@
     <div id="changelog-container">
         <h1>Changelog</h1>
         <h2>Here's everything we have shipped in the past few days</h2>
+        <button id="theme-toggle">🌙</button>
         <!--Copy this for more items-->
         <div class="changelog-row">
 <div class="changelog-date">September 3, 2024</div>
@@ -80,4 +81,18 @@
         <button id="button">Visit Complete Changelog</button>
     </div>
 </body>
+<script>
+  const body = document.body;
+  const toggleButton = document.getElementById('theme-toggle');
+
+  // Load saved theme
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+  }
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+  });
+</script>
 </html>

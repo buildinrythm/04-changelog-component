@@ -9,23 +9,28 @@
 body {
     font-family: 'Inter', sans-serif;
     padding: 1rem 2rem;
+    background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 h1{
    margin-bottom: 2rem;
+   color: var(--accent-color);
 }
 h2{
-    margin-bottom: 4rem  ;
+    margin-bottom: 1rem;
+    color: gray;
 }
 
 /* The changelog container */
 #changelog-container {
-    border: 2px solid black;
     border-radius: 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding: 2rem 3rem;
+    border: 2px solid var(--accent-color);
 }
 
 /* Settings for each row */
@@ -57,7 +62,7 @@ h2{
 
 /* individual line between date and content */
 .line {
-    border-right: 2px solid black;
+    border-right: 2px solid var(--border-color);
     height: 3rem;
     position: relative;
     height: 100%;
@@ -68,7 +73,7 @@ h2{
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--accent-color);
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -89,5 +94,23 @@ button{
     margin: 30px 0;
     cursor: pointer;
     font-size: 1rem;
+    background-color: var(--accent-color);
 }
 
+#theme-toggle{
+width: 200px;
+}
+/* Dark mode >:) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --accent-color: #000000;
+  --border-color: #000000;
+}
+
+.dark-mode {
+  --bg-color: #000000;
+  --text-color: #f0f0f0;
+  --accent-color: #a1ba32c8;
+  --border-color: #cccccc;
+}
