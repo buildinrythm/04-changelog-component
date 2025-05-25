@@ -11,7 +11,7 @@ body {
     padding: 1rem 2rem;
 }
 h1{
-    padding-bottom: 1rem;
+   margin-bottom: 2rem;
 }
 h2{
     margin-bottom: 4rem  ;
@@ -55,6 +55,7 @@ h2{
     max-width: 400px;
 }
 
+/* individual line between date and content */
 .line {
     border-right: 2px solid black;
     height: 3rem;
@@ -62,6 +63,7 @@ h2{
     height: 100%;
 }
 
+/* dot on the line */
 .dot {
     width: 15px;
     height: 15px;
@@ -72,8 +74,20 @@ h2{
     transform: translate(-50%, -50%);
 }
 
+/* the line and the dot */
 .timeline{
 height: 100%;
-border: 1px solid red;
+}
+
+button{
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 30px 0;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
